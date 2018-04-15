@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name ="instituteRepository" class ="com.krishna.repository.InstituteRepositoryImpl" />
+	
+	<bean name = "instituteService" class = "com.krishna.service.InstituteServiceImpl"  autowire="byType">
+	<!-- <property name= "instituteRepository" ref ="foo" /> -->
+	<!-- <constructor-arg index="0" ref="foo"></constructor-arg> -->
+	</bean>
+</beans>
